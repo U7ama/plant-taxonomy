@@ -1,0 +1,7 @@
+git commit -m "Update"
+git status
+git branch
+git push -u origin master
+git status
+git push
+git push heroku master
