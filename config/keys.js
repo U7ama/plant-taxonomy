@@ -1,4 +1,4 @@
 module.exports = {
-  mongoURI: "mongodb+srv://usama:usama@cluster0.iqyds.mongodb.net/test",
+  mongoURI: "MONGO_URL",
   secretOrKey: "secret"
 };
