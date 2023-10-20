@@ -70,7 +70,7 @@ app.get('/ident',(req, res) => {
   (async () => {
       let form = new FormData();
       
-      form.append('organs', 'flower');
+      form.append('organs', 'flower');pla
       form.append('images', fs.createReadStream(image_1));
       
       form.append('organs', 'leaf');
@@ -78,7 +78,7 @@ app.get('/ident',(req, res) => {
       
       try {
           const { status, data } = await axios.post(
-              'https://my-api.plantnet.org/v2/identify/all?include-related-images=true&lang=ur&api-key=2b10MW6yzzxdjyMmmnZozzXtO',
+              'https://my-api.plantnet.org/v2/identify/all?include-related-images=true&lang=ur&api-key=PLANTNET_API',
               form, {
                   headers: form.getHeaders()
               }
